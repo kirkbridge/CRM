@@ -1,7 +1,11 @@
 <div class="customer">
   <h2><%=customer.full_name %></h2>
   <%=image_tag(customer.image) %>
-  <p><b>Province:</b></p>
+  <p><b>Province:</b><% if customer.province != nil%>
+      <%=customer.province.name %>
+      <% else %>
+        <%= "None"%>
+      <%end%></p>
   <p> <%= customer.phone_number %></p>
   <div class="email">
     <p> <% if customer.email_address != ""%>
