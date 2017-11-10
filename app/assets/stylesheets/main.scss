@@ -1,0 +1,44 @@
+header nav ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+header nav ul li {
+  display: inline-block;
+  padding-right: 1em;
+}
+
+header,
+#main {
+  width: 800px;
+  margin: 0 auto;
+}
+
+.customer
+{
+  display: inline-block;
+  border: 1px solid grey;
+  border-radius: 5px;
+  width: 22%;
+  max-height: 440px;
+  margin: 5px;
+  padding: 30px;
+
+}
+
+.customer h2, .customer p
+{
+  width:80%;
+  margin: 0 auto 1.5em;
+}
+.customer img
+{
+  width: 138px;
+  height: 200px;
+  margin-left: 20px;
+}
+
+.email
+{
+  height: 35px;
+}

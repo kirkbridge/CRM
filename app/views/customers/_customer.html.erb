@@ -3,5 +3,13 @@
   <%=image_tag(customer.image) %>
   <p><b>Province:</b></p>
   <p> <%= customer.phone_number %></p>
-  <p> <%= customer.email_address %></p>
+  <div class="email">
+    <p> <% if customer.email_address != ""%>
+        <%=customer.email_address %>
+        <% else %>
+          <%= "No email found"%>
+        <%end%>
+
+    </p>
+  </div>
 </div>
